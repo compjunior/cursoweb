@@ -1,16 +1,23 @@
 *{margin: 0; padding: 0;}
 
+/* CORES
+ * Bege: #FBF1D6 
+ * Vermelho escuro: #592114
+ * Moranga: #F7811D
+ */
+
 body{
 	background-color: #FBF1D6;
-	font-family: Georgia;
-	font-size: 90%;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 70%;
 }
 
 #topo{
 	background: #592114; 
 	height: 100px;
-		
+	border-bottom: 5px solid #F7811D;
 }
+
 #titulo{
 	color: white;
 	font-size: 32px ;
@@ -18,10 +25,16 @@ body{
 	float:left;
 }
 
-.titulos{
+.titulos, a{
 	color:#FA8C37;
 	padding-bottom: 20px;
+
 }
+
+#direita .titulos{
+	text-decoration: underline;
+}
+
 .texto{
 	color: #B8AA96;
 	font-weight: bold;
@@ -37,9 +50,13 @@ body{
 	color: white;
 	font-style: italic;
 	float:left;
-	font-size: 15px;
-	margin-top: 15px;	
-	
+	font-size: 13px;
+	margin-top: 18px;	
+}
+
+#titulo, #subtitulo {
+	color: #FCF2D9;
+	/*text-transform: lowercase;*/
 }
 
 #topo_conteudo
@@ -50,43 +67,40 @@ body{
 	padding-top: 30px;
 }
 
-
-	
-
-
-#esquerda{
+#esquerda {
 	float: left;
 	padding:0px;
-	width:250px;
-	
+	width:280px;
 }
+
+.menu{
+	list-style:none;
+	margin-bottom: 23px;
+}
+
+ul.menu li a {
+	color: #B8AA96;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul.menu li {
+	border-bottom: 1px dashed #B8AA96;
+}
+
 #direita{
 	float: right;
-	width:640px;
+	width:617px;
 	margin-top:29px;
 	padding-right: 29px;
 }
 
 #rodape{
 	clear: both;
-}
-
-.menu{
-	list-style:none;
-	margin-bottom: 23px;
-	
-}
-
-ul.menu li a {
-	text-decoration: none;
-	color: #B8AA96;
-	font-weight: bold;
-	
-}
-
-ul.menu li {
-	border-bottom: 1px dashed #B8AA96;
-	
+	background:#542015 ;
+	border-top: 5px solid #F7811D;
+	color: #F7811D;
+	padding: 20px;
 }
 
 #geral{
@@ -97,8 +111,25 @@ ul.menu li {
 
 #box-busca{
 	padding:32px;
-	background: orange;
-	
+	background: #F7811D;
+	border-bottom: 5px solid white;
+}
+
+.botao{
+	background: #FFE93B;
+	color: orange;
+	font-weight:bold;
+	border:none;
+	height: 22px;
+	width: 55px;
+	padding-bottom: 2px;
+	margin-left: 5px;
+}
+
+.caixa{
+	border: none;
+	height: 22px;
+	width: 150px;
 }
 
 p{
@@ -117,13 +148,19 @@ p{
 	background: white;
 	margin-bottom: 20px;
 }
+
 #fotoMenor{
 	background: white;
-	padding: 8px;
+	padding: 8px; 
+	text-align: center;
 }
 
 #fotoMenor img{
 	border: 5px solid #E6D9B7;
-	margin-right: 6px;
-	 
+	margin-right: 11px;
 }
+
+#fotoMenor .ultimafoto {
+	margin-right: 0px;
+}
+
